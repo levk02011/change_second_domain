@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change URL without Reload</title>
+</head>
+
+<body>
+    <script>
+        // Зміна URL після завантаження сторінки
+        document.addEventListener('DOMContentLoaded', function () {
+            // Новий URL, який ви хочете встановити
+            const newUrl = 'https://example.com';
+
+            // Використовуємо history.replaceState() для зміни URL
+            window.history.replaceState({ path: newUrl }, '', newUrl);
+        });
+    </script>
+    <h1>Зміна URL без перезавантаження сторінки</h1>
+</body>
+
+</html>
